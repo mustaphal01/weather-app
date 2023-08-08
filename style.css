@@ -112,11 +112,10 @@ body {
 /* Adjustments for mobile responsiveness */
 @media (max-width: 600px) {
     .card {
+        width: 100%;
         padding: 20px;
-    }
-
-    .card h1 {
-        padding-bottom: 20px;
+        border-radius: 0;
+        margin: 0;
     }
 
     .search {
@@ -126,23 +125,31 @@ body {
     .search input {
         margin-right: 0;
         margin-bottom: 10px;
+        height: 40px;
     }
 
     .search button {
         margin-top: 10px;
+        width: 40px;
+        height: 40px;
     }
 
     .weather h1 {
-        font-size: 40px;
+        font-size: 36px;
     }
 
     .weather-icon {
-        width: 120px;
+        width: 100px;
+        margin-top: 20px;
+    }
+
+    .city {
+        font-size: 24px;
     }
 
     .details {
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .col {
@@ -150,12 +157,13 @@ body {
     }
 
     .col img {
-        width: 30px;
+        width: 24px;
+        margin-right: 8px;
     }
 
     .humidity,
     .wind {
-        font-size: 20px;
+        font-size: 16px;
         margin-top: 0;
     }
 }
