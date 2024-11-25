@@ -44,3 +44,12 @@ const apiKey = "0f30a5866ea078cdd9880c538b92718b";
         searchBtn.addEventListener("click", ()=> {
             checkWeather(searchBox.value);
         });
+
+
+        function updateCopyrightYear() {
+            const currentYear = new Date().getFullYear();
+            document.getElementById('currentYear').textContent = currentYear;
+        }
+        
+        // Call the function when the page loads
+        document.addEventListener('DOMContentLoaded', updateCopyrightYear);
